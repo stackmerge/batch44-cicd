@@ -31,8 +31,8 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.5</muleVersion>
-						<connectedAppClientId>${ClientId}</connectedAppClientId>
-						<connectedAppClientSecret>${ClientSecret}</connectedAppClientSecret>
+						<connectedAppClientId>${env.CONNECTEDAPP_CLIENT_ID}</connectedAppClientId>
+						<connectedAppClientSecret>${env.CONNECTEDAPP_CLIENT_SECRET}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<applicationName>batch44-cicd-06122023</applicationName>
 						<environment>Sandbox</environment>
