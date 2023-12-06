@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CONNECTEDAPP_CLIENT_ID: ${{ secrets.CONNECTEDAPP_CLIENT_ID }}
-      CONNECTEDAPP_CLIENT_SECRET: ${{ CONNECTEDAPP_CLIENT_SECRET }}
+      CONNECTEDAPP_CLIENT_SECRET: ${{ secrets.CONNECTEDAPP_CLIENT_SECRET }}
 
     steps:
     - uses: actions/checkout@v3
