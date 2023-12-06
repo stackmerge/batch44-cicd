@@ -1,0 +1,17 @@
+name: CloudHub Deployment
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  buildAndDeploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build And Deploy to CloudHUb with Maven
+      run: mvn clean deploy -DmuleDeploy -DClientId=fca88d2752e14f8a8a7738232296db80 -DClientSecret=7aE86Bd7dF4a44D69A2baB5d70071F4F
