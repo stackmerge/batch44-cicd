@@ -30,7 +30,7 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.5</muleVersion>
+						<muleVersion>4.7.0</muleVersion>
 						<connectedAppClientId>${env.CONNECTEDAPP_CLIENT_ID}</connectedAppClientId>
 						<connectedAppClientSecret>${env.CONNECTEDAPP_CLIENT_SECRET}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
